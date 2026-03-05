@@ -35,6 +35,7 @@ const App = () => {
   }
 
   const updateDescription = (index, description) => {
+    if (description.length === 0) return
     updateTask(index, 'description', description)
   }
   
@@ -65,3 +66,4 @@ const App = () => {
 }
 
 export default App
+
